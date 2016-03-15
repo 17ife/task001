@@ -15,13 +15,15 @@
 <body>
     <!--标题导航区域-->
     <header>
-        <h1>网站一级标题</h1>
-        <ul>
-            <li><a>导航链接一</a></li>
-            <li><a>导航链接二</a></li>
-            <li><a>导航链接三</a></li>
-            <li><a>导航链接四</a></li>
-        </ul>
+        <nav>
+            <h1>网站一级标题</h1>
+            <ul>
+                <li><a>导航链接一</a></li>
+                <li><a>导航链接二</a></li>
+                <li><a>导航链接三</a></li>
+                <li><a>导航链接四</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <!--文章区域 01-->
@@ -174,9 +176,9 @@
                         <div>邮箱地址请按照要求格式输入</div>
                         <div>
                             <label for="pwd">请输入密码</label>
-                            <input id="pwd" type="password" placeholder="这是一个文本输入框" />
+                            <input id="pwd" type="password" placeholder="这是一个文本输入框" pattern="[A-z]" minlength="6" maxlength="16"/>
                             <label for="pwd2">请重复输入密码</label>
-                            <input id="pwd2" type="password" placeholder="这是一个文本输入框" />
+                            <input id="pwd2" type="password" placeholder="这是一个文本输入框" pattern="[A-z]" minlength="6" maxlength="16"/>
                         </div>
                         <div>密码为6-16位英文数字</div>
                         <div>
@@ -191,7 +193,7 @@
                         </div>
                         <div>
                             <label for="city">城市:</label>
-                            <select id="city">
+                            <select id="city" multiple="multiple" size="1">
                                 <option>北京</option>
                                 <option>上海</option>
                                 <option>广州</option>
